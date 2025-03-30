@@ -1,0 +1,27 @@
+{
+	"name": "Excel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "cricketdata.xlsx",
+				"container": "source1"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "INSERT INTO indian_cricket_winnings (match_id, opponent, tournament, year, result, runs_scored, runs_conceded, wickets_taken, player_of_the_match)",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

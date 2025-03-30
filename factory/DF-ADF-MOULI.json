@@ -1,0 +1,9 @@
+{
+	"name": "DF-ADF-MOULI",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9611ee1c-0d02-4415-bf36-2bd5c4651436",
+		"tenantId": "4bbdd035-5233-4d7e-9d88-13697177d68b"
+	}
+}

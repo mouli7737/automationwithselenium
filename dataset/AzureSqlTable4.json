@@ -1,0 +1,60 @@
+{
+	"name": "AzureSqlTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Title",
+				"type": "varchar"
+			},
+			{
+				"name": "Handheld",
+				"type": "varchar"
+			},
+			{
+				"name": "Multiplatform",
+				"type": "varchar"
+			},
+			{
+				"name": "Online",
+				"type": "varchar"
+			},
+			{
+				"name": "Genre",
+				"type": "varchar"
+			},
+			{
+				"name": "Licensed",
+				"type": "varchar"
+			},
+			{
+				"name": "Publisher",
+				"type": "varchar"
+			},
+			{
+				"name": "Sequel",
+				"type": "varchar"
+			},
+			{
+				"name": "ReviewScore",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Sales",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "VideoGames"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

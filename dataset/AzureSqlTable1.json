@@ -1,0 +1,59 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "match_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "opponent",
+				"type": "varchar"
+			},
+			{
+				"name": "tournament",
+				"type": "varchar"
+			},
+			{
+				"name": "year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "result",
+				"type": "varchar"
+			},
+			{
+				"name": "runs_scored",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "runs_conceded",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "wickets_taken",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "player_of_the_match",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "indian_cricket_winnings"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
