@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "sourcetosql",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/b4c107f3-4d3e-4e1d-a980-063c8f258939/resourceGroups/RG-ADF-NEW/providers/Microsoft.Storage/storageAccounts/dsadf",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
