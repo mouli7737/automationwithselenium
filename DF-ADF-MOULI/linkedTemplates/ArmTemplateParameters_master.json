@@ -29,6 +29,9 @@
 		"linked_git_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com"
 		},
+		"blobtosql_properties_typeProperties_scope": {
+			"value": "/subscriptions/b4c107f3-4d3e-4e1d-a980-063c8f258939/resourceGroups/RG-ADF-NEW/providers/Microsoft.Storage/storageAccounts/dsadf"
+		},
 		"containerUri": {
 			"value": ""
 		},

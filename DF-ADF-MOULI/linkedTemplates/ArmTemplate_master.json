@@ -39,6 +39,10 @@
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com"
 		},
+		"blobtosql_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/b4c107f3-4d3e-4e1d-a980-063c8f258939/resourceGroups/RG-ADF-NEW/providers/Microsoft.Storage/storageAccounts/dsadf"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -89,6 +93,9 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"blobtosql_properties_typeProperties_scope": {
+						"value": "[parameters('blobtosql_properties_typeProperties_scope')]"
 					}
 				}
 			},
